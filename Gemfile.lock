@@ -7,11 +7,22 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    ansi (1.5.0)
+    ast (2.4.0)
+    oga (2.15)
+      ast
+      ruby-ll (~> 2.1)
+    ox (2.9.4)
+    ruby-ll (2.1.2)
+      ansi
+      ast
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  oga (>= 0.2.0)
+  ox (>= 2.1.2)
   sax-machine!
 
 RUBY VERSION

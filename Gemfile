@@ -1,3 +1,5 @@
 source 'https://rubygems.org'
 ruby '2.5.1'
+gem 'oga', '>= 0.2.0'
+gem 'ox', '>= 2.1.2'
 gem 'sax-machine', github: 'pauldix/sax-machine'
