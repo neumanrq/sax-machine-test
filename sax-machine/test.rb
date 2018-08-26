@@ -13,8 +13,7 @@ class SAXParser
   elements :item, class: ItemsParser
 end
 
-
-MemoryProfiler.start
+#MemoryProfiler.start
 
 uri               = URI("http://localhost:3034")
 parser            = SAXParser.new
@@ -25,7 +24,7 @@ Net::HTTP.start(uri.host, uri.port, use_ssl: (uri.scheme == 'https')) do |http|
   request = Net::HTTP::Get.new uri.request_uri
   http.request(request) do |response|
     response.read_body do |chunk|
-      io_write << (chunk.force_encoding('utf-8'))
+      io_write << chunk.force_encoding('utf-8')
     end
 
     io_write.close
@@ -33,6 +32,6 @@ Net::HTTP.start(uri.host, uri.port, use_ssl: (uri.scheme == 'https')) do |http|
   end
 end
 
-report = MemoryProfiler.stop
-report.pretty_print
+#report = MemoryProfiler.stop
+#report.pretty_print
 puts "--> Done!"

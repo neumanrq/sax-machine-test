@@ -1,7 +1,7 @@
 !!! XML
 %items{type: 'array'}
-  - 300000.times do
+  - 300000.times do |n|
     %item
       - item = Item.new
-      %id{type: 'integer'}= item.id
+      %id{type: 'integer'}= n
       %description= item.description
