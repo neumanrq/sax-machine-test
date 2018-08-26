@@ -1,1 +1,7 @@
 *.xml
+*.log
+*.pid
+
+/servers/rails/log/*.log
+/servers/rails/pids/*.pid
+/servers/rails/tmp/*
