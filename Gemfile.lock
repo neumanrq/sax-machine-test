@@ -9,6 +9,7 @@ GEM
   specs:
     ansi (1.5.0)
     ast (2.4.0)
+    memory_profiler (0.9.11)
     oga (2.15)
       ast
       ruby-ll (~> 2.1)
@@ -21,6 +22,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  memory_profiler
   oga (>= 0.2.0)
   ox (>= 2.1.2)
   sax-machine!

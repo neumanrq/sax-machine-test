@@ -1,0 +1,7 @@
+!!! XML
+%items{type: 'array'}
+  - 300000.times do
+    %item
+      - item = Item.new
+      %id{type: 'integer'}= item.id
+      %description= item.description
