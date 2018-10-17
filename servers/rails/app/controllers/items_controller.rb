@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
   def index
-    render formats: [:xml]
+    render formats: [:xml], stream: true
   end
 end
